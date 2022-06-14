@@ -1,0 +1,21 @@
+@import 'base/bootstrap-reboot';
+@import 'base/font';
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/animation';
+
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background-color: #fff;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
