@@ -1,0 +1,35 @@
+.header {
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    margin: 23px 0 32px;
+  }
+  &__menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 140px 10px 195px;
+    &-item {
+      list-style-type: none;
+      margin-left: 40px;
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+    &-link {
+      font-size: 14px;
+      font-family: 'RoadRadio', sans-serif;
+      text-transform: uppercase;
+      color: #686868;
+      transition: 0.1s all;
+      &:hover {
+        color: #97244c;
+      }
+    }
+  }
+  &__logo {
+    width: 135px;
+    height: 77px;
+  }
+}

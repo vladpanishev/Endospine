@@ -8,6 +8,10 @@ const app = require('../config/app.js');
 const plumber = require('gulp-plumber'); // Перехват ошибок и более наглядный их вывод
 const notify = require('gulp-notify'); // Уведомление об ошибке в виде всплывающих сообщений
 
+const newer = require('gulp-newer'); // Обробатывает только те шрифты, которые ещё небыли сжаты
+
+const fonter = require('gulp-fonter'); // Обробатывает только те шрифты, которые ещё небыли сжаты
+
 // Font
 const font = () => {
   return src(path.font.src)
@@ -19,6 +23,8 @@ const font = () => {
         })),
       })
     )
+    .pipe(newer(path.img.dest))
+    .pipe(fonter(app.fonter))
     .pipe(dest(path.font.dest));
 };
 

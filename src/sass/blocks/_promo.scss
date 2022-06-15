@@ -1,0 +1,13 @@
+.promo {
+  &__wrapper {
+    width: 100%;
+    background: radial-gradient(
+      32.04% 63.07% at 50% 50%,
+      rgba(27, 78, 111, 0) 0%,
+      rgba(27, 78, 111, 0.73) 32.81%,
+      rgba(27, 78, 111, 0.732093) 48.44%,
+      #1b4e6f 100%
+    );
+    border-radius: 10px;
+  }
+}

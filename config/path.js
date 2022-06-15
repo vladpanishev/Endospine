@@ -23,19 +23,13 @@ module.exports = {
   },
 
   img: {
-    src: pathSrc + '/img/*.{png,jpg,jpeg,gif,webp}',
-    watch: pathSrc + '/img/**/*.{png,jpg,jpeg,gif,webp}',
+    src: pathSrc + '/img/*.{png,jpg,svg,jpeg,gif,webp}',
+    watch: pathSrc + '/img/**/*.{png,jpg,svg,jpeg,gif,webp}',
     dest: pathDest + '/img',
   },
 
-  favicon: {
-    src: pathSrc + '/img/favicon/favicon.png',
-    watch: pathSrc + '/img/favicon/favicon.png',
-    dest: pathDest + '/img/favicon/',
-  },
-
   font: {
-    src: pathSrc + '/font/**/*.{eot,ttf,otf,otc,ttc,woff,woff2}',
+    src: pathSrc + '/font/*.{eot,ttf,otf,otc,ttc,woff,woff2}',
     watch: pathSrc + '/font/**/*.{eot,ttf,otf,otc,ttc,woff,woff2}',
     dest: pathDest + '/font',
   },

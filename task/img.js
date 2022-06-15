@@ -10,7 +10,6 @@ const notify = require('gulp-notify'); // Уведомление об ошибк
 const imagemin = require('gulp-imagemin'); // Минификация изображений
 const newer = require('gulp-newer'); // Обробатывает только те изображения, которые ещё небыли сжаты
 const webp = require('gulp-webp'); // Конвертирование изображений в формат webp
-const gulpif = require('gulp-if'); // Выбирает какие плагины будут работать во время разработки, а какие во время продакшена
 
 // IMG
 const img = () => {
@@ -28,7 +27,6 @@ const img = () => {
     .pipe(dest(path.img.dest))
     .pipe(src(path.img.src))
     .pipe(newer(path.img.dest))
-    .pipe(gulpif(app.isProd, imagemin(app.imagemin)))
     .pipe(dest(path.img.dest));
 };
 
