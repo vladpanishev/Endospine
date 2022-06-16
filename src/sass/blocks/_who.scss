@@ -1,0 +1,34 @@
+.who {
+  margin-bottom: 100px;
+  &__wrapper {
+    display: flex;
+    box-shadow: 6px 6px 33px rgba(0, 0, 0, 0.15),
+      inset 7px 6px 28px rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(24px);
+
+    border-radius: 10px;
+  }
+  &__block {
+    margin-top: 97px;
+  }
+  &__descr {
+    display: flex;
+    margin-bottom: 38px;
+    p {
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 110%;
+    }
+  }
+  svg {
+    width: 30px;
+    height: 30px;
+    margin-right: 9px;
+  }
+}
+
+.title__who {
+  color: #97244c;
+  margin-bottom: 30px;
+  margin-left: 40px;
+}
