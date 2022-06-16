@@ -1,0 +1,66 @@
+.why {
+  &__wrapper {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+  }
+  &__block1 {
+    position: relative;
+    max-width: 589px;
+    padding: 50px 160px 50px 44px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+  }
+
+  &__block2 {
+    position: relative;
+    max-width: 589px;
+    padding: 50px 231px 0 44px;
+    margin-left: 40px;
+    background: linear-gradient(
+      148.21deg,
+      #99244b 14.08%,
+      #b14269 38.36%,
+      #cc4876 68.72%,
+      #97244c 97.34%
+    );
+    border-radius: 10px;
+  }
+
+  &__descr1 {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #1d1d1b;
+  }
+
+  &__descr2 {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+  }
+
+  &__img1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  &__img2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+.title {
+  font-size: 30px;
+  font-family: 'RoadRadio', sans-serif;
+  &__why1 {
+    color: #97244c;
+  }
+  &__why2 {
+    color: #fff;
+  }
+}

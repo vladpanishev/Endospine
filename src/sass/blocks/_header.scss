@@ -1,7 +1,7 @@
 .header {
   &__wrapper {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: end;
     margin: 23px 0 32px;
   }
@@ -9,7 +9,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 140px 10px 195px;
     &-item {
       list-style-type: none;
       margin-left: 40px;

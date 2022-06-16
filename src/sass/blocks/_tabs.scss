@@ -1,0 +1,62 @@
+.tab-item {
+  .date {
+    font-family: 'RoadRadio';
+    font-size: 20px;
+    color: #1b4c6e;
+  }
+  .text {
+    font-weight: 400;
+    font-size: 16px;
+    color: #1d1d1b;
+  }
+  .text1 {
+    transform: translateX(-5px);
+  }
+  .text2 {
+    transform: translateX(-42px);
+  }
+  .text3 {
+    transform: translateX(-34px);
+  }
+  .text4 {
+    transform: translateX(-22px);
+  }
+  .text5 {
+    transform: translateX(-20px);
+  }
+  .text6 {
+    transform: translateX(-33px);
+  }
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 62px;
+  .tab {
+    font-family: 'RoadRadio';
+    font-weight: 400;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.1s all;
+    &:hover {
+      color: #97244c;
+    }
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+  .tab1 {
+    transform: translateX(-66px);
+  }
+}
+
+.tabs-wrapper {
+}
+
+.tab-item-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
