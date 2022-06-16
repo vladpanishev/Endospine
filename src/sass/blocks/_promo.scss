@@ -1,6 +1,7 @@
 .promo {
   &__wrapper {
     position: relative;
+    overflow: hidden;
     display: flex;
     width: 100%;
     padding: 0 45px;
@@ -81,7 +82,7 @@
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translateX(-48%) translateY(-46.5%);
+    transform: translateX(-48%) translateY(-46%);
   }
 
   &__block3 {

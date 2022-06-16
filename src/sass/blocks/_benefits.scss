@@ -1,0 +1,35 @@
+.benefits {
+  .container {
+    position: relative;
+  }
+  margin-bottom: 128px;
+  &__wrapper {
+    display: flex;
+  }
+  &__check {
+    display: flex;
+    margin-bottom: 37px;
+  }
+  &__block1 {
+    margin-right: 40px;
+  }
+
+  svg {
+    fill: #1b4c6e;
+    margin-right: 5px;
+    width: 42px;
+    height: 42px;
+    transform: translateY(-10px);
+  }
+  &__img {
+    position: absolute;
+    top: 0;
+    right: -15px;
+    z-index: -1;
+  }
+}
+
+.title__benefits {
+  margin-bottom: 72px;
+  color: #97244c;
+}
