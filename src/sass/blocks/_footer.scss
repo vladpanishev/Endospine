@@ -1,0 +1,81 @@
+.footer {
+  background: #4e4e4e;
+  padding-bottom: 67px;
+  svg {
+    width: 135px;
+    height: 77px;
+    margin-bottom: 14px;
+  }
+  &__title1 {
+    font-family: 'RoadRadio';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 110%;
+    margin-bottom: 13px;
+
+    color: #9c9c9c;
+  }
+  &__title2 {
+    font-family: 'RoadRadio';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 110%;
+    margin-bottom: 15px;
+
+    color: #9c9c9c;
+  }
+
+  &__inner {
+    margin-top: 36px;
+
+    li {
+      margin-bottom: 10px;
+    }
+    &-link {
+      color: #dfdfdf;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 110%;
+      &:hover {
+        color: #948c8c;
+      }
+    }
+    &-item {
+      margin-bottom: 15px;
+    }
+
+    p {
+      color: #dfdfdf;
+      margin-bottom: 15px;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 110%;
+    }
+  }
+  &__world {
+    margin-bottom: 20px;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__block1 {
+    margin-left: 40px;
+    margin-top: 23px;
+    p {
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 110%;
+
+      color: #ffffff;
+    }
+  }
+  &__inner {
+    display: flex;
+    justify-content: center;
+
+    &-block3 {
+      margin-left: 211px;
+    }
+  }
+}

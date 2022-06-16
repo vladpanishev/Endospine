@@ -1,0 +1,49 @@
+.form {
+  &__contact {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__input {
+    width: 260px;
+    padding-bottom: 5px;
+    margin-bottom: 22px;
+
+    color: #fff;
+    font-size: 15px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #b4b4b4;
+    &:nth-child(2) {
+      margin-bottom: 20px;
+    }
+    &::placeholder {
+      color: #fff;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 110%;
+    }
+  }
+
+  label {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 110%;
+    color: #fff;
+    margin-bottom: 57px;
+  }
+
+  &__chekbox {
+    background: none;
+  }
+
+  .title__form {
+    font-family: 'RoadRadio';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 45px;
+
+    color: #ffffff;
+  }
+}

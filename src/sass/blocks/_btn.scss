@@ -16,4 +16,14 @@
       background-color: #072f4a;
     }
   }
+
+  &--red {
+    width: 300px;
+    height: 40px;
+    background: #97244c;
+    transition: 0.1s all;
+    &:hover {
+      background: #89113b;
+    }
+  }
 }
