@@ -23,7 +23,7 @@
     margin-right: 141px;
   }
   &__chunk {
-    padding: 28px 0 12px 15px;
+    padding: 28px 10px 12px 15px;
     width: 260px;
 
     background: rgba(233, 233, 233, 0.1);
@@ -45,4 +45,76 @@
 .title__profit {
   color: #fff;
   margin-bottom: 54px;
+}
+
+@include desktop {
+  .profit {
+    &__block1 {
+      margin-right: 41px;
+      gap: 30px;
+    }
+  }
+}
+
+@include laptop {
+  .profit {
+    &__inner {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    &__block1 {
+      margin-bottom: 40px;
+    }
+    &__chunk {
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+
+  .title__profit {
+    text-align: center;
+  }
+}
+
+@include tablet {
+  .profit {
+    &__chunk {
+      padding-bottom: 28px;
+      width: 220px;
+    }
+    &__block1 {
+      margin-right: 0;
+    }
+    &__wrapper {
+      padding-right: 22px;
+      padding-left: 22px;
+    }
+  }
+}
+
+@include mobile {
+  .profit {
+    &__wrapper {
+      padding-left: 38px;
+      padding-right: 38px;
+      padding-top: 35px;
+    }
+    &__block1 {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    &__chunk {
+      width: 100%;
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .title__profit {
+    text-align: left;
+    margin-bottom: 23px;
+  }
 }

@@ -32,3 +32,50 @@
   margin-bottom: 30px;
   margin-left: 40px;
 }
+
+@include laptop {
+  .who {
+    margin-bottom: 50px;
+    &__wrapper {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    &__block {
+      margin-top: 30px;
+    }
+  }
+}
+
+@include tablet {
+  .who {
+    &__wrapper {
+      img {
+        width: 500px;
+      }
+    }
+  }
+}
+
+@include mobile {
+  .who {
+    &__wrapper {
+      img {
+        width: 300px;
+      }
+    }
+    &__descr {
+      p {
+        font-size: 15px;
+      }
+    }
+    svg {
+      width: 25px;
+      height: 15px;
+    }
+  }
+
+  .title__who {
+    margin-left: 21px;
+    margin-bottom: 20px;
+  }
+}

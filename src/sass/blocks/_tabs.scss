@@ -52,11 +52,14 @@
   }
 }
 
-.tabs-wrapper {
-}
-
 .tab-item-row {
   display: flex;
   justify-content: space-between;
   margin-bottom: 15px;
+}
+
+@include desktop {
+  .tabs-wrapper {
+    display: none;
+  }
 }

@@ -15,14 +15,22 @@
 @import 'blocks/profit';
 @import 'blocks/form';
 @import 'blocks/footer';
+@import 'blocks/modal';
 
 * {
   font-family: 'SourceSans', sans-serif;
 }
 
+body {
+  .noscroll {
+    overflow: hidden;
+  }
+}
+
 .container {
   max-width: 1250px;
   width: 100%;
+  height: 100%;
   margin: 0 auto;
   padding: 0 15px;
 }

@@ -1,14 +1,27 @@
 .header {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: rgba(255, 255, 255, 0.98);
+  .container {
+    position: relative;
+  }
   &__wrapper {
     display: flex;
     justify-content: space-around;
     align-items: end;
-    margin: 23px 0 32px;
   }
   &__menu {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 5px;
+
     &-item {
       list-style-type: none;
       margin-left: 40px;
@@ -30,5 +43,163 @@
   &__logo {
     width: 135px;
     height: 77px;
+  }
+  &__social {
+    display: none;
+  }
+}
+
+.hamb {
+  &__field {
+    padding: 10px 20px;
+  }
+
+  display: none;
+  position: absolute;
+  top: 13px;
+  right: 24px;
+  .bar {
+    display: block;
+
+    height: 3px;
+    width: 46px;
+
+    margin-bottom: 4px;
+
+    background: #97244c;
+    transition: 0.2s all;
+  }
+  &-active {
+    .bar {
+      &:nth-child(1) {
+        margin-bottom: -3px;
+
+        transform: translateY(3px) rotate(-45deg);
+      }
+      &:nth-child(2) {
+        display: none;
+      }
+      &:nth-child(3) {
+        transform: translateY(3px) rotate(45deg);
+      }
+    }
+  }
+}
+
+.popup {
+  display: none;
+}
+
+@include desktop {
+  .header {
+    &__logo {
+      width: 104px;
+      height: 58px;
+    }
+    &__menu-item {
+      margin-left: 30px;
+    }
+  }
+}
+@include laptop {
+  .header {
+    &__menu-link {
+      font-size: 12px;
+    }
+  }
+}
+
+@include tablet {
+  .header {
+    &__menu-item {
+      margin-left: 20px;
+    }
+    &__menu-link {
+      font-size: 10px;
+    }
+    &__logo {
+      width: 81px;
+      height: 43px;
+    }
+  }
+}
+
+@include mobile {
+  .header {
+    background-color: #fff;
+    &__wrapper {
+      margin: 0;
+    }
+    &__menu {
+      display: none;
+    }
+
+    &__logo {
+      position: relative;
+      top: 0;
+      left: -43px;
+    }
+  }
+
+  .hamb {
+    display: block;
+  }
+
+  .popup {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 100;
+    top: 62px;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    transition: 0.2s all;
+
+    .header-social {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &-contact {
+        display: flex;
+        flex-direction: column;
+      }
+      &-icon {
+        display: flex;
+      }
+    }
+
+    .header__menu {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: start;
+      padding: 50px 0;
+      overflow: auto;
+      li {
+        width: 100%;
+        a {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          font-family: 'RoadRadio';
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 14px;
+          padding: 20px 0;
+          font-size: 20px;
+          font-weight: bold;
+          color: #686868;
+        }
+      }
+    }
+  }
+  .open {
+    left: 0;
   }
 }

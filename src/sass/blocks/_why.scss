@@ -64,3 +64,42 @@
     color: #fff;
   }
 }
+
+@include desktop {
+  .why {
+    &__block2 {
+      margin-left: 20px;
+    }
+  }
+}
+
+@include laptop {
+  .why {
+    &__wrapper {
+      flex-wrap: wrap;
+      margin-bottom: 30px;
+    }
+    &__block2 {
+      padding-right: 100px;
+      padding-bottom: 100px;
+      margin-left: 0;
+      margin-top: 30px;
+    }
+  }
+}
+@include mobile {
+  .why {
+    &__block1 {
+      padding: 75px 25px 25px 25px;
+    }
+    &__img1 {
+      display: none;
+    }
+    &__img2 {
+      width: 150px;
+    }
+    &__block2 {
+      padding: 35px 22px 105px 20px;
+    }
+  }
+}

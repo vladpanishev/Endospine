@@ -35,3 +35,57 @@
   color: #97244c;
   margin-left: 40px;
 }
+
+@include laptop {
+  .benefits {
+    margin-bottom: 50px;
+    &__img {
+      display: none;
+    }
+    &__wrapper {
+      margin-left: 0;
+      justify-content: center;
+    }
+  }
+
+  .title__benefits {
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+@include tablet {
+  .benefits {
+    margin-bottom: 20px;
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .title__benefits {
+    font-size: 20px;
+    margin-bottom: 50px;
+  }
+}
+
+@include mobile {
+  .benefits {
+    p {
+      font-size: 14px;
+      line-height: 110%;
+    }
+    &__wrapper {
+      flex-direction: column;
+      margin-left: 38px;
+    }
+    &__check {
+      margin-bottom: 20px;
+    }
+  }
+
+  .title__benefits {
+    text-align: left;
+    font-size: 15px;
+    margin-left: 38px;
+  }
+}
